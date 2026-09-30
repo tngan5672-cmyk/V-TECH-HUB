@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background studio light-blue gradient matching executive photo -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7399c6"/>
+      <stop offset="45%" stop-color="#91b8df"/>
+      <stop offset="100%" stop-color="#d5e6f5"/>
+    </linearGradient>
+
+    <!-- Hair gradient -->
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14181f"/>
+      <stop offset="100%" stop-color="#242c38"/>
+    </linearGradient>
+
+    <!-- Skin gradient -->
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f6d3b3"/>
+      <stop offset="100%" stop-color="#e8be99"/>
+    </linearGradient>
+
+    <!-- Shadow under chin -->
+    <linearGradient id="chinShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4a37b"/>
+      <stop offset="100%" stop-color="#e8be99"/>
+    </linearGradient>
+
+    <!-- Suit jacket navy gradient -->
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#192538"/>
+      <stop offset="50%" stop-color="#141e2e"/>
+      <stop offset="100%" stop-color="#0f1622"/>
+    </linearGradient>
+
+    <!-- Lapel highlight -->
+    <linearGradient id="lapelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22334d"/>
+      <stop offset="100%" stop-color="#131c2b"/>
+    </linearGradient>
+
+    <!-- Shirt light blue gradient -->
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e1effa"/>
+      <stop offset="100%" stop-color="#b8daf3"/>
+    </linearGradient>
+
+    <!-- Navy tie gradient -->
+    <linearGradient id="tieGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#213a5f"/>
+      <stop offset="100%" stop-color="#162842"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0a1526" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Studio Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle lighting vignette -->
+  <circle cx="200" cy="180" r="160" fill="#ffffff" opacity="0.12"/>
+
+  <!-- Character Group with Soft Drop Shadow -->
+  <g filter="url(#softGlow)">
+    <!-- Suit Body / Shoulders -->
+    <path d="M70,400 C75,320 115,260 160,248 L175,250 L200,285 L225,250 L240,248 C285,260 325,320 330,400 Z" fill="url(#suitGrad)"/>
+
+    <!-- Light Blue Dress Shirt Collar and V -->
+    <polygon points="172,246 228,246 200,315" fill="url(#shirtGrad)"/>
+    <!-- Left Collar -->
+    <path d="M172,242 L185,278 L200,266 L186,242 Z" fill="#ebf5fc"/>
+    <!-- Right Collar -->
+    <path d="M228,242 L215,278 L200,266 L214,242 Z" fill="#d9ecf9"/>
+
+    <!-- Dark Navy Silk Tie -->
+    <!-- Tie Knot -->
+    <polygon points="194,264 206,264 209,280 191,280" fill="#1b2e4b"/>
+    <!-- Tie Body -->
+    <polygon points="191,280 209,280 216,365 200,390 184,365" fill="url(#tieGrad)"/>
+    <!-- Tie shadow/texture line -->
+    <line x1="200" y1="280" x2="200" y2="385" stroke="#2c4b78" stroke-width="1.5" stroke-opacity="0.4"/>
+
+    <!-- Suit Lapels -->
+    <!-- Left Lapel -->
+    <path d="M142,254 L180,335 L196,335 L174,244 C162,248 151,250 142,254 Z" fill="url(#lapelGrad)"/>
+    <!-- Right Lapel -->
+    <path d="M258,254 L220,335 L204,335 L226,244 C238,248 249,250 258,254 Z" fill="url(#lapelGrad)"/>
+
+    <!-- Folded Arms / Forearms (Navy Suit Sleeves) -->
+    <!-- Left Arm Across -->
+    <path d="M80,395 C90,340 140,325 210,340 C215,355 205,385 190,400 Z" fill="#182436"/>
+    <!-- Right Arm / Hands Folded -->
+    <path d="M320,395 C310,340 260,325 190,340 C185,355 195,385 210,400 Z" fill="#152030"/>
+
+    <!-- Hand fingers subtly resting on sleeve -->
+    <!-- Left Hand Fingers on Right Forearm -->
+    <g fill="#e8be99">
+      <rect x="105" y="322" width="26" height="8" rx="4" transform="rotate(-35 105 322)"/>
+      <rect x="112" y="330" width="28" height="8" rx="4" transform="rotate(-35 112 330)"/>
+      <rect x="120" y="338" width="28" height="8" rx="4" transform="rotate(-35 120 338)"/>
+      <rect x="128" y="346" width="26" height="8" rx="4" transform="rotate(-35 128 346)"/>
+    </g>
+
+    <!-- Neck -->
+    <path d="M182,215 L182,250 C182,260 218,260 218,250 L218,215 Z" fill="url(#chinShadow)"/>
+    <path d="M185,225 L185,248 C195,255 205,255 215,248 L215,225 Z" fill="url(#skinGrad)"/>
+
+    <!-- Head / Face -->
+    <!-- Head Base Oval (Slightly tapered chin) -->
+    <path d="M152,140 C152,85 248,85 248,140 C248,185 235,225 200,225 C165,225 152,185 152,140 Z" fill="url(#skinGrad)"/>
+
+    <!-- Ears -->
+    <ellipse cx="149" cy="148" rx="9" ry="16" fill="#ebc29f"/>
+    <ellipse cx="149" cy="148" rx="5" ry="9" fill="#d9aa82"/>
+    <ellipse cx="251" cy="148" rx="9" ry="16" fill="#e5bb97"/>
+    <ellipse cx="251" cy="148" rx="5" ry="9" fill="#d4a37b"/>
+
+    <!-- Hair (Neat Asian executive side part) -->
+    <path d="M148,135 C145,100 162,72 200,70 C238,72 255,100 252,135 C248,120 240,92 200,90 C160,92 152,120 148,135 Z" fill="url(#hairGrad)"/>
+    <!-- Forehead Hairline (Natural Receding/Part) -->
+    <path d="M158,110 C175,98 225,98 242,110 C240,100 230,85 200,82 C170,85 160,100 158,110 Z" fill="#1b212b"/>
+
+    <!-- Eyebrows -->
+    <path d="M165,134 Q178,130 190,135" stroke="#222a36" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M210,135 Q222,130 235,134" stroke="#222a36" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyes (Warm, smiling with slight crinkle) -->
+    <!-- Left Eye -->
+    <ellipse cx="178" cy="146" rx="8" ry="4.5" fill="#ffffff"/>
+    <ellipse cx="178" cy="146" rx="4" ry="4" fill="#231f20"/>
+    <circle cx="176.5" cy="144.5" r="1.5" fill="#ffffff"/>
+    <path d="M170,144 Q178,139 186,144" stroke="#26211e" stroke-width="1.8" fill="none"/>
+    <!-- Right Eye -->
+    <ellipse cx="222" cy="146" rx="8" ry="4.5" fill="#ffffff"/>
+    <ellipse cx="222" cy="146" rx="4" ry="4" fill="#231f20"/>
+    <circle cx="220.5" cy="144.5" r="1.5" fill="#ffffff"/>
+    <path d="M214,144 Q222,139 230,144" stroke="#26211e" stroke-width="1.8" fill="none"/>
+
+    <!-- Nose -->
+    <path d="M198,142 L196,165 Q196,172 200,172 Q204,172 204,165" stroke="#cca17d" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <!-- Nostril curves -->
+    <path d="M193,169 Q197,173 200,173 Q203,173 207,169" stroke="#ba8b67" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Warm Smile / Mouth -->
+    <path d="M182,188 Q200,205 218,188" stroke="#ba5d5d" stroke-width="2" fill="#c96b6b"/>
+    <!-- White teeth row -->
+    <path d="M186,189 Q200,196 214,189 Q200,192 186,189 Z" fill="#ffffff"/>
+    <!-- Smile dimple shadows -->
+    <path d="M177,184 Q178,190 182,192" stroke="#cca17d" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M223,184 Q222,190 218,192" stroke="#cca17d" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyeglasses (Modern black rectangular executive frames) -->
+    <!-- Left Lens Frame -->
+    <rect x="162" y="136" width="32" height="22" rx="4" fill="none" stroke="#182230" stroke-width="3"/>
+    <!-- Right Lens Frame -->
+    <rect x="206" y="136" width="32" height="22" rx="4" fill="none" stroke="#182230" stroke-width="3"/>
+    <!-- Bridge connecting frames -->
+    <path d="M194,142 Q200,139 206,142" fill="none" stroke="#182230" stroke-width="3"/>
+    <!-- Frame Temples extending towards ears -->
+    <line x1="162" y1="141" x2="149" y2="144" stroke="#182230" stroke-width="2.5"/>
+    <line x1="238" y1="141" x2="251" y2="144" stroke="#182230" stroke-width="2.5"/>
+    <!-- Lens Subtle Glass Glare -->
+    <path d="M165,140 L188,140 L180,154 L165,154 Z" fill="#ffffff" opacity="0.15"/>
+    <path d="M209,140 L232,140 L224,154 L209,154 Z" fill="#ffffff" opacity="0.15"/>
+  </g>
+
+  <!-- Clean Corporate Brand Badge in Corner -->
+  <g transform="translate(16, 360)">
+    <rect width="138" height="24" rx="6" fill="#0f172a" fill-opacity="0.8" stroke="#334155" stroke-width="1"/>
+    <text x="10" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#ffffff" letter-spacing="0.5">DATUMBRIDGE</text>
+  </g>
+</svg>

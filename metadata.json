@@ -1,0 +1,6 @@
+{
+  "name": "V-Tech Alliance",
+  "description": "An interactive digital hub for V-Tech technology alliances, security infrastructure, and partner ecosystem onboarding.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
